@@ -28,7 +28,7 @@ import (
 
 func main() {
 	var (
-		endpoint                = flag.String("endpoint", "unix://tmp/csi.sock", "CSI Endpoint")
+		endpoint                = flag.String("endpoint", "unix://csi/csi.sock", "CSI Endpoint")
 		version                 = flag.Bool("version", false, "Print the version and exit")
 		efsUtilsCfgDirPath      = flag.String("efs-utils-config-dir-path", "/etc/amazon/efs/", "The path to efs-utils config directory")
 		efsUtilsStaticFilesPath = flag.String("efs-utils-static-files-path", "/etc/amazon/efs-static-files/", "The path to efs-utils static files directory")
